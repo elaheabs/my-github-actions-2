@@ -22,12 +22,13 @@ jobs:
         run: npm install
 
       - name: Build the project
-        run: npm run build
+        run: |
+          npm run build
+          echo build was successful.
           
-      - name: Deploy to firebase
-        - uses: FirebaseExtended/action-hosting-deploy@v0
-          with:
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
             repoToken: '${{ secrets.GITHUB_TOKEN }}'
             firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GITHUB_ACTIONS_71249 }}'
             projectId: github-actions-71249
-
