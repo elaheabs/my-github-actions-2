@@ -1,0 +1,28 @@
+name: challenge workflow
+on: push
+jobs:
+ job1:
+  name: The first job
+  runs-on: ubuntu-latest
+  steps:
+   - name: show date
+     run: date
+ job2:
+  name: The second job
+  runs-on: windows-latest
+  steps:
+   - name: show date
+     run: date
+ job3:
+  name: The third job
+  runs-on: macos-latest
+  steps:
+   - name: show date
+     run: date
+ job4:
+  name: The fourth job
+  runs-on: ubuntu-latest
+  needs: [job1, job2, job3]
+  steps:
+   - name: show date
+     run: date
