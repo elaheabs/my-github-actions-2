@@ -1,0 +1,21 @@
+name: my second workflow
+on: [push]
+jobs:
+   job1:
+    name: First Job
+    runs-on: ubuntu-latest
+    steps:
+     - name: Step one
+       uses: actions/checkout@v2
+     - name: Step Two
+       run: echo this is the first command
+   job2:
+    name: Second Job
+    runs-on: ubuntu-latest
+    steps:
+     - name: Step one
+       uses: actions/checkout@v2
+     - name: Step Two
+       run: |
+        echo this is the second aommand
+        echo and the third command 
