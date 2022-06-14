@@ -10,13 +10,12 @@ jobs:
     name: "Pre Release"
     runs-on: "ubuntu-latest"
 
-    steps:
-      - name: "Build & test"
-        run: |
-          echo "done!"
+    steps:  
+      - uses: actions/checkout@v3
+     
       - name: Install the packages
         run: npm install
-        
+
       - name: Bump Tag
         run: |
           npx standard-version    
