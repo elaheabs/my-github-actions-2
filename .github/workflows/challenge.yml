@@ -41,4 +41,4 @@ jobs:
       echo "1. $workflow_env_name"
       echo "2. $job5_env_name"
       echo "3. $step_env_name"
-      echo "4. ${{ env.GITHUB_ACTOR }}"
+      echo "4. ${{ env.GITHUB_WORKFLOW }}"
