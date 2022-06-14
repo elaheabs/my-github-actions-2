@@ -1,4 +1,6 @@
 name: challenge workflow
+env:
+ workflow_env_name: 'challenge name'
 on: push
 jobs:
  job1:
@@ -26,3 +28,17 @@ jobs:
   steps:
    - name: show date
      run: date
+ job5: 
+  name: defie env variables
+  env:
+   job5_env_name: 'elahe' 
+  runs-on: ubuntu-latest
+  steps:
+   - name: Print a env
+     env: 
+      step_env_name: 'step name'
+     run: |
+      echo "1. $workflow_env_name"
+      echo "2. $job5_env_name"
+      echo "3. $step_env_name"
+      echo "4. ${{ env.GITHUB_ACTOR }}"
