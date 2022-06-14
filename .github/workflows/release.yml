@@ -13,10 +13,7 @@ jobs:
     steps:
       - name: "Build & test"
         run: |
-          echo "done!"
-      - name: Bump Tag
-        run: |
-          yarn standard-version
+          echo "done!"    
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
