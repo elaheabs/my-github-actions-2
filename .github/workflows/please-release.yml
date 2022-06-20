@@ -1,16 +1,14 @@
-name: 'please release'
-
-on: [push]
-
+on:
+  push:
+    branches:
+      - main
+name: release-please
 jobs:
-  pre-release:
-    name: "Pre Re-lease"
+  release-please:
     runs-on: ubuntu-latest
     steps:
-       - uses: actions/checkout@v3
-       - uses: google-github-actions/release-please-action@v3.1.2
-         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: google-github-actions/release-please-action@v3
+        with:
           release-type: node
-          package-name: my-github-actions-2
+          package-name: release-please-action
 
