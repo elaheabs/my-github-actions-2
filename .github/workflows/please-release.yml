@@ -16,4 +16,4 @@ jobs:
         uses: actions/upload-artifact@v3.1.0
         with: 
           name: my-first-artifact
-          path: my-github-actions-2/dist
+          path: dist
