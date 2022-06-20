@@ -11,3 +11,8 @@ jobs:
         with:
           release-type: node
           package-name: release-please-action
+      - name: Upload a Build Artifact
+      - uses: actions/upload-artifact@v3.1.0
+        with: 
+         name: my-first-artifact
+         path: build/
