@@ -14,11 +14,14 @@ jobs:
       - name: build
         run: |
          mkdir -p output/test
+         echo hello > output/test/message.txt
          npm run build >> output/test/log.txt
       - uses: actions/upload-artifact@v3
         with:
           name: log-file
-          path: output/test/log.txt
+          path: |
+            output/test/log.txt
+            output/test/message.txt
 
       - uses: google-github-actions/release-please-action@v3
         with:
