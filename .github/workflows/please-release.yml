@@ -14,11 +14,15 @@ jobs:
         with:
          name: my-artifact
          path: path/to/artifact/world.txt
-         
+
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
           package-name: release-please-action
+      - uses: actions/upload-artifact@v3
+        with:
+         name: my-artifact2
+         path: path/to/artifact
 
       
 
