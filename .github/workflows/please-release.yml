@@ -15,10 +15,8 @@ jobs:
         run: npm run build
       - uses: actions/upload-artifact@v3
         with:
-          name: buildartifact
-          path: |
-            dist
-            !dist/**/*.md
+          name: code-coverage-report
+          path: output/test/code-coverage.html
 
       - uses: google-github-actions/release-please-action@v3
         with:
