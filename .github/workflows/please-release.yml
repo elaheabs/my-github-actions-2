@@ -7,34 +7,7 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install the packages
-        run: npm install     
-   
-      - name: build
-        run: |
-         mkdir -p output/test
-         echo hello > output/test/message.txt
-         npm run build >> output/test/log.txt
-      - uses: actions/upload-artifact@v3
-        with:
-          name: log-file
-          path: |
-            output/test/log.txt
-            output/test/message.txt
-
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
           package-name: release-please-action
-
-     
-
-      
-
-
-
-
-
-
- 

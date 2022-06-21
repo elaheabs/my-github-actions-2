@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - main
+name: release-please
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install the packages
+        run: npm install     
+   
+      - name: build
+        run: |
+         mkdir -p output/test
+         echo hello > output/test/message.txt
+         npm run build >> output/test/log.txt
+      - uses: actions/upload-artifact@v3
+        with:
+          name: logs
+          path: |
+            output/test/log.txt
+            output/test/message.txt
+
+
+ 
