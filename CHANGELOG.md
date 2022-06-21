@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5-pre.0](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.4-pre.0...v0.2.5-pre.0) (2022-06-21)
+
+
+### Bug Fixes
+
+* 126 ([dafd1a9](https://github.com/elaheabs/my-github-actions-2/commit/dafd1a972f40037e25df245e73532c92bc708471))
+
 ## [0.2.4-pre.0](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.3-pre.0...v0.2.4-pre.0) (2022-06-21)
 
 
