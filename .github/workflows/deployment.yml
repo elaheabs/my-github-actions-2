@@ -1,9 +1,10 @@
 on:
-  pull_request:
-    branches: 
-     - main
-    types: [closed]
-  
+  # pull_request:
+  #   branches: 
+  #    - main
+  #   types: [closed]
+  release:
+    types: [published] 
 name: Deployment
 
 jobs:
