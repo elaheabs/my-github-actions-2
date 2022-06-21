@@ -13,7 +13,7 @@ jobs:
    
       - name: build
         run: |
-         mkdir -p output/test/build.txt
+         mkdir -p output/test
          echo hello > output/test/build.txt
          npm run build
       - uses: actions/upload-artifact@v3
