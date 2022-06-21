@@ -1,11 +1,15 @@
 on:
-  release:
-    types: [released]
+  pull_request:
+    branches: 
+     - main
+    types: [closed]
+  
 name: Deployment
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged 
     steps:
      - name: To show a message
        run: echo deployment is done
