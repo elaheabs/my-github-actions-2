@@ -13,12 +13,12 @@ jobs:
    
       - name: build
         run: |
-         mkdir -p output/test
+         mkdir -p output/test/build.txt
          npm run build
       - uses: actions/upload-artifact@v3
         with:
           name: code-coverage-report
-          path: output/test
+          path: output/test/build.txt
 
       - uses: google-github-actions/release-please-action@v3
         with:
