@@ -8,17 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install the packages
+        run: npm install     
       - run: mkdir -p path/to/artifact2
-   
-      - uses: google-github-actions/release-please-action@v3
-        with:
-          release-type: node
-          package-name: release-please-action
-          
+      - name: build
+        run: npm run build
       - uses: actions/upload-artifact@v3
         with:
          name: my-artifact2
          path: path/to/artifact2
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: release-please-action
+
+     
 
       
 
