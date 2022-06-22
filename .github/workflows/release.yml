@@ -15,6 +15,7 @@ jobs:
      
       - name: Install the packages
         run: npm install
+        
       - name: Setup GitHub User
         run: |
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
