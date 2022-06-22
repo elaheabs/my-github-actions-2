@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.5-pre.1...v0.2.5) (2022-06-22)
+
 ### [0.2.5-pre.1](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.7...v0.2.5-pre.1) (2022-06-22)
 
 ## [0.2.5-pre.0](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.4-pre.0...v0.2.5-pre.0) (2022-06-21)
