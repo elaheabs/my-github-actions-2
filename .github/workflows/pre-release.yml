@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+      - "feature/ticket2"
 
 jobs:
   pre-release:
