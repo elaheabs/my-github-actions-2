@@ -2,13 +2,13 @@ name: "pre-release"
 on:
   workflow_dispatch:
     inputs:
-      release_type: 
-         type: choice
+      release_type:        
          description: Make a choice
          options:
            - major
            - minor
            - patch
+         type: choice
 # on:
 #   push:
 #     branches:
