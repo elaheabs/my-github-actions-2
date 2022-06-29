@@ -1,10 +1,21 @@
 name: "pre-release"
 
 on:
-  push:
-    branches:
-      - "main"
-      - "feature/ticket2"
+  workflow_dispatch:
+    inputs:
+      choice: 
+        type: choice
+        description: Make a choice
+        options:
+          - major
+          - minor
+          - patch
+       
+# on:
+#   push:
+#     branches:
+#       - "main"
+#       - "feature/ticket2"
 
 jobs:
   pre-release:
