@@ -24,5 +24,8 @@ jobs:
           
       - name: Bump Tag
         run: |
-          npx standard-version    
+          npx standard-version   
+      - name: Push Tag
+        run: |
+          git push --follow-tags origin "${GITHUB_REF}" 
     
