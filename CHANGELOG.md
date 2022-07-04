@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.8-pre.0](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.7-pre.0...v0.2.8-pre.0) (2022-07-04)
+
+
+### Bug Fixes
+
+* fixed the text to ticket4 ([4fe699f](https://github.com/elaheabs/my-github-actions-2/commit/4fe699f415e04b4d2788cbab788054afb4aadb46))
+
 ## [0.2.7-pre.0](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.6-pre.0...v0.2.7-pre.0) (2022-07-04)
 
 

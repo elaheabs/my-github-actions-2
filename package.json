@@ -1,6 +1,6 @@
 {
   "name": "my-github-actions-2",
-  "version": "0.2.8",
+  "version": "0.2.8-pre.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
