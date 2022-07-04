@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React ticket3
+          Learn React ticket3 + a prefix
         </a>
       </header>
     </div>
