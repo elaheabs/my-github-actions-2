@@ -7,6 +7,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 * added a prefix ([c89321f](https://github.com/elaheabs/my-github-actions-2/commit/c89321f2027c0190c46a132dbb40f71f0032cdc6))
 
+## [0.2.8-pre.0](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.7-pre.0...v0.2.8-pre.0) (2022-07-04)
+
+
+### Bug Fixes
+
+* changed changelog ([5a76e58](https://github.com/elaheabs/my-github-actions-2/commit/5a76e58bc30ad2c079597a44b6f4e2f0f9bcf968))
+* fixed the text to ticket4 ([4fe699f](https://github.com/elaheabs/my-github-actions-2/commit/4fe699f415e04b4d2788cbab788054afb4aadb46))
+
 ### [0.2.8](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.6...v0.2.8) (2022-06-22)
 
 ### [0.2.7](https://github.com/elaheabs/my-github-actions-2/compare/v0.2.6...v0.2.7) (2022-06-22)
