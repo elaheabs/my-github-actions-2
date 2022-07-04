@@ -1,6 +1,6 @@
 {
   "name": "my-github-actions-2",
-  "version": "0.2.7-pre.0",
+  "version": "0.2.8",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -15,8 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "release": "standard-version"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
